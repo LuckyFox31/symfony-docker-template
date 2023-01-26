@@ -6,13 +6,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: mysql://root:secret@database:3306/db_name?serverVersion=mariadb-10.9.4
     ports:
       - "8001:80"
     depends_on:
       - database
 
   database:
-    image: mariadb
+    image: mariadb:10.9.4
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: secret

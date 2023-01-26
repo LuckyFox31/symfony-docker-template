@@ -18,7 +18,20 @@ RUN pecl install apcu && docker-php-ext-enable apcu
 # Configuration du serveur Apache
 COPY ./conf/apache.conf /etc/apache2/sites-available/apache.conf
 RUN a2dissite 000-default.conf \
-    && a2ensite apache.conf
+    && a2ensite apache.conf \
+    && a2enmod rewrite
+
+# Copie des fichiers de l'application Symfony
+WORKDIR /var/www
+
+COPY . .
+
+RUN composer install \
+    && composer dump-autoload
+
+# Création des fichiers de cache et définition des permissions
+RUN chown -R www-data:www-data /var/www/var \
+    && chmod -R 777 /var/www/var
 
 # Exposition du port 80 pour Apache
 EXPOSE 80
