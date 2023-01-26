@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      DATABASE_URL: mysql://root:secret@database:3306/db_name?serverVersion=mariadb-10.9.4
+      DATABASE_URL: mysql://root:secret@database:3306/symfony_db?serverVersion=mariadb-10.9.4
     ports:
       - "8001:80"
     depends_on:
