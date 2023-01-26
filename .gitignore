@@ -1,6 +1,8 @@
 vendor/
 .DS_Store
 .idea/
+.env
+var/
 
 ###> symfony/webpack-encore-bundle ###
 /node_modules/
