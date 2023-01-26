@@ -11,6 +11,12 @@ services:
       APP_SECRET: changeMe
     ports:
       - "8001:80"
+    volumes:
+      - ./config:/var/www/config
+      - ./src:/var/www/src
+      - ./templates:/var/www/templates
+      - ./tests:/var/www/tests
+      - ./translations:/var/www/translations
     depends_on:
       - database
 
@@ -22,6 +28,8 @@ services:
       MARIADB_DATABASE: symfony_db
     ports:
       - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin
@@ -33,3 +41,6 @@ services:
       - "8080:80"
     depends_on:
       - database
+
+volumes:
+  db_data:
