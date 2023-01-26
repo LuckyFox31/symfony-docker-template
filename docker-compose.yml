@@ -42,5 +42,12 @@ services:
     depends_on:
       - database
 
+  mailcatcher:
+    image: schickling/mailcatcher
+    restart: unless-stopped
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+
 volumes:
   db_data:
