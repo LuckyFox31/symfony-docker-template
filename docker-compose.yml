@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+
+  php_8.2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8001:80"
+    depends_on:
+      - database
+
+  database:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: secret
+      MARIADB_DATABASE: symfony_db
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: database
+    ports:
+      - "8080:80"
+    depends_on:
+      - database
