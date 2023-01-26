@@ -17,6 +17,10 @@ Template Symfony v6.2.5 avec Docker sur un serveur Apache et une base de donnée
 ```shell
 cd template
 ```
+- Créer un fichier `.env` avec la strucuture du fichier `.env.example` et renseigner les credentials
+```shell
+cp .env.example .env
+```
 - Installer les dépendances JS
 ```shell
 npm install
