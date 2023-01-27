@@ -17,6 +17,7 @@ services:
       - ./templates:/var/www/templates
       - ./tests:/var/www/tests
       - ./translations:/var/www/translations
+      - ./public/build:/var/www/public/build
     depends_on:
       - database
 
