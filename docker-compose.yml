@@ -9,7 +9,7 @@ services:
     environment:
       DATABASE_URL: mysql://root:secret@database:3306/symfony_db?serverVersion=mariadb-10.9.4
       APP_SECRET: changeMe
-      MAILER_DSN: native://default
+      MAILER_DSN: smtp://:@mailcatcher:1025
       MESSENGER_TRANSPORT_DSN: doctrine://default
     ports:
       - "8001:80"
