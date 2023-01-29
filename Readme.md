@@ -17,6 +17,11 @@ Template Docker pour un projet **Symfony 6.2.5** type **webapp**.
     * [Création des fichiers nécéssaires](#création-des-fichiers-nécéssaires)
     * [Installation des dépendances Javascript](#installation-des-dépendances-javascript)
     * [Lancement de Docker](#lancement-de-docker)
+  * [Serveur Mail](#serveur-mail)
+    * [Serveur SMTP](#serveur-smtp)
+    * [Le DSN](#le-dsn)
+    * [Consommer les emails](#consommer-les-emails)
+    * [Accéder au mailcatcher](#accéder-au-mailcatcher)
   * [Commandes à connaitre](#commandes-à-connaitre)
     * [Supprimer les conteneurs](#supprimer-les-conteneurs)
     * [Se connecter au conteneur Apache](#se-connecter-au-conteneur-apache)
@@ -68,6 +73,28 @@ npm run build
 ```shell
 docker compose up --build
 ```
+
+## Serveur Mail
+Ce template utilise **[mailcatcher](https://hub.docker.com/r/schickling/mailcatcher)** pour la reception de mail.
+
+### Serveur SMTP
+Le serveur SMTP est accessible au port `1025`.
+
+### Le DSN
+Le DSN est initialisé avec `smtp://:@mailcatcher:1025`.  
+
+Le transporteur est initialisé avec `doctrine://default`.
+
+### Consommer les emails
+Si vous avez besoin d'envoyer des mails via l'application, il faut consommer ces derniers avec cette commande : 
+```shell
+docker compose exec php_8.2 bin/console messenger:consume
+```
+
+### Accéder au mailcatcher
+Le **mailcatcher** est accessible au port `1080`.
+
+[Cliquez ici pour ouvrir le mailcatcher en local](http://localhost:1080/).
 
 ## Commandes à connaitre
 
