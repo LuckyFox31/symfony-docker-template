@@ -21,6 +21,7 @@ services:
       - ./translations:/var/www/translations
       - ./public/build:/var/www/public/build
       - ./migrations:/var/www/migrations
+      - ./vendor:/var/www/vendor
     depends_on:
       - database
 
