@@ -26,13 +26,6 @@ WORKDIR /var/www
 
 COPY . .
 
-RUN composer install \
-    && composer dump-autoload
-
-# Création des fichiers de cache et définition des permissions
-RUN chown -R www-data:www-data /var/www/var \
-    && chmod -R 777 /var/www/var
-
 # Exposition du port 80 pour Apache
 EXPOSE 80
 
