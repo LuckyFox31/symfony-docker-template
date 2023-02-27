@@ -1,5 +1,14 @@
 <img src="http://noah-grebet.com/symfony-docker/Thumbnail.png" alt="Thumbnail Docker Symfony" style="width: 100%" />
 
+<div style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap;">
+  <img style="margin: 10px" alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/LuckyFox31/symfony-docker-template/main?style=for-the-badge">
+  <img style="margin: 10px" alt="GitHub Release Date" src="https://img.shields.io/github/release-date/LuckyFox31/symfony-docker-template?style=for-the-badge">
+  <img style="margin: 10px" alt="GitHub contributors" src="https://img.shields.io/github/contributors/LuckyFox31/symfony-docker-template?style=for-the-badge">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/LuckyFox31/symfony-docker-template?style=for-the-badge">
+  <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/LuckyFox31/symfony-docker-template?style=for-the-badge">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/LuckyFox31/symfony-docker-template?style=for-the-badge">
+</div>
+
 # Template Docker pour Symfony 6.2.5
 
 Template Docker pour un projet **Symfony 6.2.5** type **webapp**.
