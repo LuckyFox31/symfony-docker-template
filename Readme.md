@@ -82,7 +82,7 @@ docker compose up --build -d
 ```shell
 docker ps 
 
-docker exec -it [ID_DU_CONTENEUR] sh
+docker exec -it [ID_DU_CONTENEUR] zsh
 ```
 - Installer les dépendances
 ```shell
@@ -120,7 +120,7 @@ docker compose down
 
 ### Se connecter au conteneur Apache
 ```shell
-docker exec -it php_8.2 sh
+docker exec -it php_8.2 zsh
 ```
 
 ### Execution des commandes
