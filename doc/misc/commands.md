@@ -32,4 +32,4 @@ docker compose exec php_8.2 [COMMANDE]
 
 [◄ Revenir sur la première page](../../Readme.md)
 |
-[Conteneurs disponibles ►](../misc/containers.md)
+[Mettre à jour les permissions du serveur Apache ►](../misc/permissions.md)

@@ -27,6 +27,8 @@ Template Docker pour un projet **Symfony 6.2.5** type **webapp**.
   * [Table des matières](#table-des-matières)
   * Recommendations
     * [Windows](./doc/recommendations/windows.md)
+    * [MacOS](./doc/recommendations/macos.md)
+    * [Linux](./doc/recommendations/linux.md)
   * [Installation en local](./doc/installation/installation.md)
   * [Serveur Mail](./doc/misc/mail-server.md)
   * [Commandes à connaitre](./doc/misc/commands.md)
