@@ -140,3 +140,76 @@ docker exec -it php_8.2 zsh
 ```shell
 docker compose exec php_8.2 [COMMANDE]
 ```
+
+
+# Recommandation Windows
+
+Prérequis 
+
+disposer de Windows Terminal
+Avoir activer le sous système linux
+
+Installer Ubuntu sur windows
+
+- Se rendre dans windows store
+- Installer Ubuntu 20.04 -> obtenir
+
+- Renseigner ses information de connexion.
+
+Installation de zsh 
+
+- mettre à jour la liste des paquets
+
+sudo apt update
+
+sudo apt upgrade
+
+Installer et configurer zsh
+
+- installation
+sudo apt install zsh
+
+change de shell
+chsh -s /usr/bin/zsh
+
+- Install Starship  Starship et FiraCode font
+
+```bash
+apt-get install -y zsh unzip;
+chsh -s /bin/zsh;
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip
+unzip FiraCode.zip -d ~/.fonts
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Configurée git
+
+git config --global user.name "John DOE"
+git config --global user.email "johndoe@email.com"
+
+Activer le distro ubuntu sur Docker destop
+
+Se rendre dans la paramètre de Docker destop
+
+- Resources
+- wsl integration
+
+-- activer ubuntu.
+
+Intallation de node
+
+installation nvm ==> voir doc
+
+Installation de node 
+
+nvm install 18.14.02 #lts
+
+Changer les permission pour que apache ait les droit d'écrire sur public et var
+
+// à faire en cas d'erreur de permissions apache.
+
+# sudo chmod -R 777 public
+
+# sudo chmod -R 777 public
