@@ -32,5 +32,6 @@ Template Docker pour un projet **Symfony 6.2.5** type **webapp**.
   * [Installation en local](./doc/installation/installation.md)
   * [Serveur Mail](./doc/misc/mail-server.md)
   * [Commandes à connaitre](./doc/misc/commands.md)
+  * [Mettre à jour les permissions du serveur Apache](./doc/misc/permissions.md)
   * [Conteneurs disponibles](./doc/misc/containers.md)
 <!-- TOC -->
