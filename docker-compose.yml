@@ -21,9 +21,9 @@ services:
 
   database:
     image: mariadb:10.9.4
-    restart: always
+    restart: unless-stopped
     environment:
-      MARIADB_ROOT_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
       MARIADB_DATABASE: symfony_db
     ports:
       - "3306:3306"
@@ -32,10 +32,11 @@ services:
 
   phpmyadmin:
     image: phpmyadmin
-    restart: always
+    restart: unless-stopped
     environment:
-      PMA_ARBITRARY: 1
       PMA_HOST: database
+      PMA_USER: root
+      PMA_PASSWORD: secret
     ports:
       - "8080:80"
     depends_on:
