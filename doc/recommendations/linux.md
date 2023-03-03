@@ -1,11 +1,11 @@
-# Recommendation MacOS
+# Recommendation Linux
 
 Nous vous recommandons d'utiliser **ZSH** couplé à **Starship** prompt pour améliorer votre workflow.
 ---
 
 ## Table des matières
 <!-- TOC -->
-* [Recommendation MacOS](#recommendation-macos)
+* [Recommendation Linux](#recommendation-linux)
   * [Nous vous recommandons d'utiliser **ZSH** couplé à **Starship** prompt pour améliorer votre workflow.](#nous-vous-recommandons-dutiliser-zsh-couplé-à-starship-prompt-pour-améliorer-votre-workflow)
   * [Table des matières](#table-des-matières)
   * [Prérequis](#prérequis)
@@ -38,7 +38,7 @@ chsh -s /usr/bin/zsh
 ```
 
 ## Installation de Sharship prompt
-- Télécharger et installer la police **FiraCode**
+- Télécharger et installer la police [**FiraCode**](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip)
 ```shell
 sudo apt-get install -y wget unzip;
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip
