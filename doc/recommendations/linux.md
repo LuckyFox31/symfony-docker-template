@@ -38,7 +38,7 @@ chsh -s /usr/bin/zsh
 ```
 
 ## Installation de Sharship prompt
-- Télécharger et installer la police **FiraCode**
+- Télécharger et installer la police [**FiraCode**](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip)
 ```shell
 sudo apt-get install -y wget unzip;
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip
