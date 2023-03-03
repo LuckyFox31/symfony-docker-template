@@ -1,11 +1,11 @@
-# Recommendation MacOS
+# Recommendation Linux
 
 Nous vous recommandons d'utiliser **ZSH** couplé à **Starship** prompt pour améliorer votre workflow.
 ---
 
 ## Table des matières
 <!-- TOC -->
-* [Recommendation MacOS](#recommendation-macos)
+* [Recommendation Linux](#recommendation-linux)
   * [Nous vous recommandons d'utiliser **ZSH** couplé à **Starship** prompt pour améliorer votre workflow.](#nous-vous-recommandons-dutiliser-zsh-couplé-à-starship-prompt-pour-améliorer-votre-workflow)
   * [Table des matières](#table-des-matières)
   * [Prérequis](#prérequis)
