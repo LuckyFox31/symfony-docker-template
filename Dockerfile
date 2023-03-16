@@ -30,6 +30,8 @@ RUN echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 
 # Création d'un utilisateur Apache qui sera désigné comme utilisateur par défaut pour exécuter les commandes
 RUN userdel www-data && useradd -ms /bin/sh www-data
+RUN cp ~/.zshrc /home/www-data/.zshrc
+RUN chown www-data /home/www-data/.zshrc
 USER www-data
 
 # Copie des fichiers de l'application Symfony
